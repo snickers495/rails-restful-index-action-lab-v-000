@@ -3,6 +3,7 @@ class Student < ActiveRecord::Base
     @students = Student.all
     render "index"
   end
+  
   def to_s
     self.first_name + " " + self.last_name
   end
